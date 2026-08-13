@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Youth Mentorship and STEAM | Health Matters Clinic</title>
+<meta name="description" content="Health Matters Clinic wrote its own youth STEAM curriculum in 2022 and has been running mentoring and enrichment inside Los Angeles schools since. This school year it is an approved on-site wellness partner at Ingenium Schools.">
+<link rel="canonical" href="https://youth.healthmatters.clinic/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Youth Mentorship and STEAM | Health Matters Clinic">
+<meta property="og:description" content="Mentoring, enrichment and STEAM sessions inside Los Angeles schools. Same campuses, year after year, and a signed agreement for the 2025-2026 school year.">
+<meta property="og:url" content="https://youth.healthmatters.clinic/">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Questrial&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/hmc-parallax.css">
+<link rel="stylesheet" href="./assets/site/hmc-buttons-1.0.4.css">
+
+<style>
+:root{
+  --hmc-primary:#2333df;
+  --hmc-primary-hover:#1a2ecc;
+  --hmc-secondary:#ff6e40;
+  --hmc-accent:#f9c74f;
+  --hmc-bg:#f5f3ef;
+  --hmc-text:#0a0a0a;
+  --hmc-muted:#2a2540;
+  --hmc-hero:#070707;
+  --hmc-blue:#2333df;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--hmc-bg);color:var(--hmc-text);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+blockquote{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.measure{max-width:680px}
+h1,h2,h3,.display{font-family:'Questrial','Inter',sans-serif;font-weight:400}
+
+/* ===================== HERO ===================== */
+/* There is no cleared photography of students, and there will not be, so the
+   hero is built out of type and colour instead of a carousel. Same shell,
+   scrim, glow and grain as MHO and RELIEF. What replaces the slides is a
+   stroked word sitting behind the headline and two colour fields. */
+.hero{position:relative;overflow:hidden;background:var(--hmc-hero);min-height:100vh;height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-field{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-field::before,.hero-field::after{content:'';position:absolute;border-radius:50%;filter:blur(2px)}
+.hero-field::before{left:-18%;top:-24%;width:78%;height:82%;background:radial-gradient(closest-side,rgba(35,51,223,.52),transparent 72%)}
+.hero-field::after{right:-14%;bottom:-18%;width:62%;height:66%;background:radial-gradient(closest-side,rgba(249,199,79,.20),transparent 70%)}
+/* The word behind the headline. Stroke only, so it reads as texture rather than
+   a second heading, and it is hidden from assistive tech. */
+.hero-word{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);z-index:1;pointer-events:none;
+  font-family:'Inter',sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:-.03em;
+  font-size:clamp(120px,26vw,360px);line-height:.8;white-space:nowrap;
+  color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.13)}
+.hero-grain{position:absolute;inset:0;z-index:3;opacity:.055;pointer-events:none;background-size:160px;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,7,7,.62) 0%,rgba(7,7,7,.18) 34%,rgba(7,7,7,.94) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding:clamp(48px,9vw,110px) 0 clamp(38px,6vw,72px)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-accent);margin:0 0 22px}
+.hero-title{color:#fff;font-size:clamp(46px,7.4vw,112px);line-height:.86;letter-spacing:-.02em;max-width:11ch;margin:0 0 26px}
+.hero-title em{font-style:normal;color:var(--hmc-accent)}
+.hero-tagline{color:rgba(255,255,255,.88);font-size:clamp(16px,1.7vw,20px);max-width:58ch;margin:0 0 34px;line-height:1.5}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+
+/* ===================== SECTIONS ===================== */
+section{padding:clamp(56px,8vw,110px) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-primary);margin:0 0 20px}
+.eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--hmc-accent)}
+h2{font-size:clamp(30px,4.6vw,58px);line-height:.98;letter-spacing:-.02em;margin:0 0 22px}
+h3{font-size:1.35rem;line-height:1.15;margin:0 0 10px}
+p{margin:0 0 18px}
+.lede{font-size:clamp(17px,1.9vw,21px);line-height:1.5;color:var(--hmc-muted)}
+.twoup{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:clamp(28px,4vw,56px);align-items:start}
+.note{font-size:.86rem;color:var(--hmc-muted);opacity:.85;max-width:70ch;margin:18px 0 0}
+
+/* ===================== METHOD ===================== */
+.method{background:var(--hmc-text);color:#fff;border-radius:26px;padding:clamp(24px,3vw,36px)}
+.method h3{color:var(--hmc-accent)}
+.method dl{display:grid;grid-template-columns:auto 1fr;gap:12px 22px;margin:0;font-size:.93rem}
+.method dt{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);padding-top:5px;white-space:nowrap}
+.method dd{margin:0;color:rgba(255,255,255,.92)}
+
+/* ===================== STATEMENT BANDS ===================== */
+/* These sit where a photo band sits on the other programme sites. A page with
+   no imagery needs somewhere for the eye to rest, and one sentence at display
+   size does that job without pretending a stock photograph is our work. */
+.block{width:calc(100% - clamp(28px,4vw,56px));margin:0 auto;border-radius:clamp(20px,2.6vw,34px);overflow:hidden}
+.statement{background:var(--hmc-primary);color:#fff;padding:clamp(44px,7vw,92px) clamp(24px,4vw,64px)}
+.statement p{font-family:'Questrial','Inter',sans-serif;font-size:clamp(28px,4.4vw,58px);line-height:1.02;letter-spacing:-.02em;margin:0;max-width:19ch}
+.statement .sub{font-family:'Inter',sans-serif;font-size:clamp(15px,1.5vw,18px);line-height:1.5;letter-spacing:0;color:rgba(255,255,255,.82);max-width:56ch;margin:22px 0 0}
+.statement.ink{background:var(--hmc-text)}
+.statement.ink em{font-style:normal;color:var(--hmc-accent)}
+
+/* ===================== DARK SECTION ===================== */
+.dark-sec{background:var(--hmc-text);color:#fff}
+.dark-sec h2{color:#fff}
+.dark-sec h2 em{font-style:normal;color:var(--hmc-accent)}
+.dark-sec .lede{color:rgba(255,255,255,.78)}
+.dark-sec .eyebrow{color:var(--hmc-accent)}
+.dark-sec .note{color:rgba(255,255,255,.58)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,2.6vw,32px);margin-top:44px}
+.step{border-top:2px solid var(--hmc-accent);padding-top:18px}
+.step h3{color:#fff;font-size:1.15rem}
+.step .when{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--hmc-accent);display:block;margin-bottom:10px}
+.step p{font-size:.93rem;color:rgba(255,255,255,.74);margin:0}
+
+/* ===================== THE DATED LOG ===================== */
+/* Every card here is one day someone was in a building. The date leads because
+   the dates are the argument. */
+.log{list-style:none;margin:38px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:clamp(14px,1.6vw,20px)}
+.log-item{background:#fff;border:1px solid var(--hmc-text);border-radius:22px;padding:24px 22px;display:flex;flex-direction:column;gap:8px}
+.log-date{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--hmc-primary)}
+.log-item h3{font-size:1.08rem;margin:0}
+.log-item p{font-size:.94rem;color:var(--hmc-muted);line-height:1.5;margin:0}
+.log-item.pop{background:var(--hmc-accent)}
+.log-item.pop .log-date{color:var(--hmc-text)}
+.log-item.deep{background:var(--hmc-primary);color:#fff}
+.log-item.deep .log-date{color:var(--hmc-accent)}
+.log-item.deep p{color:rgba(255,255,255,.9)}
+
+/* ===================== SITES ===================== */
+.sites{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(14px,1.6vw,20px);margin-top:38px}
+.site{background:#fff;border:1px solid var(--hmc-text);border-radius:22px;padding:26px 24px}
+.site h3{font-size:1.12rem;margin-bottom:8px}
+.site address{font-style:normal;font-size:.95rem;color:var(--hmc-muted);line-height:1.55}
+
+/* ===================== LISTS AND CARDS ===================== */
+.slist{background:#fff;border:1px solid var(--hmc-text);border-radius:22px;padding:24px}
+.slist h3{font-size:1.05rem;margin-bottom:12px}
+.slist ul{margin:0;padding-left:19px;font-size:.93rem;color:var(--hmc-muted);line-height:1.6}
+.slist li{margin-bottom:5px}
+.opsgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(14px,1.6vw,20px);margin-top:20px}
+.involve{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:clamp(14px,1.6vw,20px);margin-top:40px}
+.icard{background:#fff;border:1px solid var(--hmc-text);border-radius:24px;padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.icard.pop{background:var(--hmc-accent)}
+.icard .tag{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--hmc-primary)}
+.icard.pop .tag{color:var(--hmc-text)}
+.icard p{font-size:.94rem;color:var(--hmc-muted);margin:0;flex:1}
+.icard.pop p{color:var(--hmc-text)}
+.icard ul{margin:0;padding-left:19px;font-size:.92rem;color:var(--hmc-muted);line-height:1.55}
+.icard li{margin-bottom:5px}
+.shipbox{background:var(--hmc-primary);color:#fff;border-radius:22px;padding:clamp(24px,3vw,34px);margin-top:24px}
+.shipbox h3{color:var(--hmc-accent);font-size:1.05rem}
+.shipbox p{color:rgba(255,255,255,.9);font-size:.94rem;margin:0 0 12px}
+.shipbox a{color:var(--hmc-accent)}
+.shipbox ul{margin:0 0 18px;padding-left:19px;color:rgba(255,255,255,.92);font-size:.93rem;line-height:1.6}
+.shipbox li{margin-bottom:5px}
+
+/* ===================== CYCLE ===================== */
+.cycle{list-style:none;counter-reset:cyc;margin:38px 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(14px,1.6vw,20px)}
+.cyc{counter-increment:cyc;background:#fff;border:1px solid var(--hmc-text);border-radius:22px;padding:26px 24px}
+.cyc::before{content:counter(cyc);display:inline-flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border-radius:50%;background:var(--hmc-primary);color:#fff;
+  font-family:'Questrial',sans-serif;font-size:1.2rem;line-height:1;margin-bottom:16px;font-variant-numeric:tabular-nums}
+.cyc h3{font-size:1.12rem;margin-bottom:8px}
+.cyc p{font-size:.95rem;color:var(--hmc-muted);line-height:1.5;margin:0}
+
+/* ===================== FAQ + FOOTER ===================== */
+.sitefoot{background:var(--hmc-text);color:rgba(255,255,255,.72)}
+.foot-inner{padding:clamp(48px,7vw,88px) 0 0}
+.faq-head{max-width:640px;margin-bottom:36px}
+.faq-title{font-family:'Questrial',sans-serif;font-size:clamp(28px,4vw,44px);color:#fff;margin:0 0 14px;line-height:1}
+.faq-intro{margin:0;font-size:.98rem;color:rgba(255,255,255,.66)}
+.faq-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(26px,4vw,52px)}
+.faq-group h5{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--hmc-accent);margin:0 0 12px}
+.faq-item{border-top:1px solid rgba(255,255,255,.16)}
+.faq-item:last-child{border-bottom:1px solid rgba(255,255,255,.16)}
+.faq-item summary{cursor:pointer;padding:15px 0;font-size:1rem;font-weight:600;color:#fff;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.25rem;line-height:1;color:var(--hmc-accent);flex:0 0 auto}
+.faq-item[open] summary::after{content:'\2212'}
+.faq-item summary:focus-visible{outline:2px solid var(--hmc-accent);outline-offset:3px}
+.faq-answer{padding:0 0 16px;font-size:.95rem;line-height:1.6;color:rgba(255,255,255,.72);max-width:60ch}
+.faq-answer p{margin:0 0 12px}
+.faq-answer p:last-child{margin:0}
+.faq-answer a{color:var(--hmc-accent)}
+.foot-brand{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;
+  margin-top:clamp(40px,6vw,72px);padding-top:32px;border-top:1px solid rgba(255,255,255,.16)}
+.foot-logo{display:inline-block;line-height:0;margin:0 0 14px}
+.foot-logo img{display:block;width:56px;height:56px}
+.foot-logo:focus-visible{outline:2px solid var(--hmc-accent);outline-offset:3px}
+.foot-brand p{margin:0;font-size:.92rem;max-width:44ch}
+.foot-cols{display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px)}
+.foot-col h6{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0 0 12px}
+.foot-col a{display:block;color:rgba(255,255,255,.8);text-decoration:none;font-size:.93rem;margin-bottom:9px}
+.foot-col a:hover{color:var(--hmc-accent)}
+.foot-legal{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;
+  padding:26px 0 34px;margin-top:34px;border-top:1px solid rgba(255,255,255,.16);font-size:.85rem}
+.foot-legal a{color:rgba(255,255,255,.66);margin-right:18px}
+
+/* ===================== KINETIC ===================== */
+.kinetic-wrap{padding:clamp(30px,5vw,54px) 0;background:var(--hmc-bg);border-top:1px solid var(--hmc-text);border-bottom:1px solid var(--hmc-text)}
+/* Continuous marquee, same fix as MHO. The span set is duplicated in the markup,
+   so translating by half the row loops seamlessly instead of leaving the second
+   half of the phrase parked off the right edge. */
+@keyframes hmcMarquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+.kinetic-wrap .hmc-kinetic-row{animation:hmcMarquee 30s linear infinite;will-change:transform}
+@media (prefers-reduced-motion:reduce){.kinetic-wrap .hmc-kinetic-row{animation:none}}
+
+footer{background:var(--hmc-text);color:rgba(255,255,255,.64);padding:44px 0;font-size:.87rem}
+footer a{color:var(--hmc-accent)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:20px;top:20px;z-index:99;background:#fff;color:#0a0a0a;padding:12px 18px;border-radius:999px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero hmc-parallax-hero">
+  <div class="hero-field" aria-hidden="true"></div>
+  <div class="hero-word" aria-hidden="true">STEAM</div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <p class="hero-eyebrow">Youth Mentorship and STEAM</p>
+      <h1 class="hero-title">We keep <em>coming back.</em></h1>
+      <p class="hero-tagline">Mentoring, enrichment and STEAM sessions inside Los Angeles schools. Health Matters Clinic wrote its own youth curriculum in 2022, spent 2023 returning to the same campuses across South LA, and is on campus again this school year under a signed agreement.</p>
+      <div class="cta-row">
+        <a data-hmc-label="This school year" class="hmc-btn hmc-btn-primary" href="#now">This school year</a>
+        <a data-hmc-label="Where we have been" class="hmc-btn hmc-btn-secondary" href="#record">Where we have been</a>
+        <a data-hmc-label="Bring us to your school" class="hmc-btn hmc-btn-secondary" href="#school">Bring us to your school</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== WHY IT WORKS ===================== -->
+<section id="why">
+  <div class="wrap">
+    <div class="twoup">
+      <div data-reveal>
+        <p class="eyebrow">Why it works</p>
+        <h2>A visit is not a program.</h2>
+        <p class="lede">One assembly does not change how a young person sees their own future. Being in the building again next week starts to.</p>
+        <p>Students clock which adults come back. The first session is polite. By the second, someone asks a question they would not have asked a stranger. By the fourth, a student tells you what they actually want to do, and you can put a person, a course or a career next to it.</p>
+        <p>So everything Health Matters Clinic runs in schools is built to repeat. Same campus, same faces, on a schedule the school sets. In spring 2023 our afterschool enrichment and mentoring at 107th Street Elementary and STEAM Magnet ran four times in eleven days. That is the shape of the program.</p>
+      </div>
+      <div class="method" data-reveal>
+        <h3>The program at a glance</h3>
+        <dl>
+          <dt>Program</dt><dd>Youth Mentorship and STEAM</dd>
+          <dt>Curriculum</dt><dd>Written and launched by Health Matters Clinic in 2022</dd>
+          <dt>Campuses</dt><dd>Elementary, middle and high schools in Los Angeles</dd>
+          <dt>Formats</dt><dd>Afterschool enrichment, mentoring sessions, science and engineering fairs, camps, and school and community events</dd>
+          <dt>Cost</dt><dd>No charge to the school</dd>
+          <dt>This year</dt><dd>Approved on-site wellness partner at Ingenium Schools for the 2025-2026 school year</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THIS SCHOOL YEAR ===================== -->
+<!-- The live MOU is the strongest thing on the page, so it runs before the
+     history rather than after it. Everything in this section is present tense. -->
+<section class="dark-sec" id="now">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">This school year</p>
+      <h2>We are on a campus <em>right now.</em></h2>
+      <p class="lede">Ingenium Schools has named Health Matters Clinic an approved on-site wellness partner, providing recurring health and wellness programming for students and families through the 2025-2026 school year.</p>
+      <p style="color:rgba(255,255,255,.78)">The agreement took effect on November 18, 2025 and runs to June 30, 2026. Ingenium provides the room. HMC provides the staff, the volunteers, the materials and the program. None of it is billed to the school.</p>
+      <p style="color:rgba(255,255,255,.78)">Three things run on that campus this year.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal>
+        <span class="when">Quarterly</span>
+        <h3>Community health fair</h3>
+        <p>Screenings, health education and a resource fair, open to students, to their families, and to the neighborhood around the school.</p>
+      </div>
+      <div class="step" data-reveal>
+        <span class="when">Monthly</span>
+        <h3>Wellness workshop series</h3>
+        <p>A rotating set of topics. Mental health and stress management. Nutrition and food access. Financial wellness and employment readiness. Physical activity. Healthy relationships and social connection.</p>
+      </div>
+      <div class="step" data-reveal>
+        <span class="when">Ongoing</span>
+        <h3>Outreach and service learning</h3>
+        <p>Volunteer recruitment, student service-learning opportunities, and community drives including hygiene kits and a back-to-school health day.</p>
+      </div>
+    </div>
+    <p class="note">One school site, at 13305 San Pedro Street in Los Angeles. Dates are set with the site principal against the school calendar.</p>
+  </div>
+</section>
+
+<!-- ===================== STATEMENT ===================== -->
+<div class="block statement" data-reveal>
+  <p>The fourth visit is the one that counts.</p>
+  <p class="sub">Between April 28 and May 8, 2023, Health Matters Clinic ran afterschool enrichment and mentoring at 107th Street Elementary and STEAM Magnet on four separate days. A further mentoring and education session followed that spring.</p>
+</div>
+
+<!-- ===================== 107TH STREET ===================== -->
+<section id="anchor">
+  <div class="wrap">
+    <div class="twoup">
+      <div data-reveal>
+        <p class="eyebrow">One school, over and over</p>
+        <h2>107th Street Elementary and STEAM Magnet.</h2>
+        <p class="lede">The clearest picture of what this program is comes from one campus in spring 2023.</p>
+        <p>April 28. May 1. May 8. Then a fifth session later that spring. Afterschool enrichment and mentoring, delivered by the same organization, to the same students, inside eleven days.</p>
+        <p>Students from 107th Street also took part in the JREAM Foundation Youth Camp in 2023, where Health Matters Clinic delivered afterschool enrichment and mentoring. JREAM is the foundation of Kayvon Thibodeaux, a professional athlete.</p>
+      </div>
+      <ol class="cycle" style="margin-top:0">
+        <li class="cyc" data-reveal>
+          <h3>The room gets quiet</h3>
+          <p>Session one is an introduction. Students are polite, and mostly waiting to see whether you come back.</p>
+        </li>
+        <li class="cyc" data-reveal>
+          <h3>The questions start</h3>
+          <p>Once you are a returning face rather than a guest, students ask the things they would not ask a stranger.</p>
+        </li>
+        <li class="cyc" data-reveal>
+          <h3>Something sticks</h3>
+          <p>By the fourth session a student can name what they want to do next, and there is an adult in the room who knows how to help them get there.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE RECORD ===================== -->
+<section id="record" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">The record</p>
+      <h2>Where we have been.</h2>
+      <p class="lede">Dated youth and school work from Health Matters Clinic's 2023 outreach log. Elementary, middle and high school. Fairs, camps, mentoring sessions and holidays.</p>
+    </div>
+    <ul class="log">
+      <li class="log-item" data-reveal>
+        <span class="log-date">April 15, 2023</span>
+        <h3>Morningside High School</h3>
+        <p>ISD Science and Engineering Design Fair.</p>
+      </li>
+      <li class="log-item deep" data-reveal>
+        <span class="log-date">April 28, 2023</span>
+        <h3>107th Street Elementary and STEAM Magnet</h3>
+        <p>Afterschool enrichment and mentoring.</p>
+      </li>
+      <li class="log-item deep" data-reveal>
+        <span class="log-date">May 1, 2023</span>
+        <h3>107th Street Elementary and STEAM Magnet</h3>
+        <p>Afterschool enrichment and mentoring.</p>
+      </li>
+      <li class="log-item deep" data-reveal>
+        <span class="log-date">May 8, 2023</span>
+        <h3>107th Street Elementary</h3>
+        <p>Afterschool enrichment and mentoring.</p>
+      </li>
+      <li class="log-item pop" data-reveal>
+        <span class="log-date">Spring 2023</span>
+        <h3>107th Street Elementary and STEAM Magnet</h3>
+        <p>A further mentoring and education session. The day is recorded without a date in the log.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">May 31, 2023</span>
+        <h3>Youth Collective and Wellbeing, SPA 6</h3>
+        <p>Take Action for Mental Health.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">June 24, 2023</span>
+        <h3>First Annual Youth Football and Cheer Camp</h3>
+        <p>Health Matters Clinic on site for the camp.</p>
+      </li>
+      <li class="log-item pop" data-reveal>
+        <span class="log-date">2023</span>
+        <h3>JREAM Foundation Youth Camp</h3>
+        <p>Afterschool enrichment and mentoring for students at 107th Street Elementary, at the youth camp run by Kayvon Thibodeaux's foundation.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">August 8, 2023</span>
+        <h3>Franklin D. Middle School</h3>
+        <p>Back to school, on campus.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">August 17, 2023</span>
+        <h3>Ingenium</h3>
+        <p>The first entry in the log for a school HMC now holds an agreement with.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">October 30, 2023</span>
+        <h3>Ingenium Middle</h3>
+        <p>Halloween Bash.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">October 30, 2023</span>
+        <h3>Neighborhood Youth Achievers</h3>
+        <p>Halloween party.</p>
+      </li>
+      <li class="log-item" data-reveal>
+        <span class="log-date">December 2023</span>
+        <h3>Neighborhood Youth Achievers</h3>
+        <p>Holiday party. The day is recorded as December without a date.</p>
+      </li>
+    </ul>
+    <p class="note">Entries are transcribed from Health Matters Clinic's 2023 outreach log. Where the log records a month or a season without a day, this page says so rather than picking one.</p>
+  </div>
+</section>
+
+<!-- ===================== KINETIC MARQUEE ===================== -->
+<div class="kinetic-wrap hmc-kinetic" aria-hidden="true">
+  <div class="hmc-kinetic-row">
+    <span>Mentorship</span><span class="o">STEAM</span><span class="accent">Los Angeles</span><span>Mentorship</span><span class="o">STEAM</span><span class="accent">Los Angeles</span>
+  </div>
+</div>
+
+<!-- ===================== THE CURRICULUM ===================== -->
+<section id="curriculum">
+  <div class="wrap">
+    <div class="twoup">
+      <div data-reveal>
+        <p class="eyebrow">The curriculum</p>
+        <h2>We wrote our own.</h2>
+        <p class="lede">In 2022 Health Matters Clinic wrote and launched its youth STEAM curriculum.</p>
+        <p>Before that, a school visit was a school visit. After it, there was a syllabus behind the room. That is the difference between a good afternoon and a program a principal can put on a calendar and a funder can look at.</p>
+        <p>The same curriculum is what lets the work travel. A science and engineering design fair at a high school, an afterschool block at an elementary campus and a summer camp are not three separate efforts. They are the same material meeting students where they already are.</p>
+      </div>
+      <div class="opsgrid" style="margin-top:0">
+        <div class="slist" data-reveal>
+          <h3>Where it has run</h3>
+          <ul>
+            <li>Elementary school, afterschool enrichment and mentoring</li>
+            <li>Middle school, on campus</li>
+            <li>High school, science and engineering design fair</li>
+            <li>Youth camps and community youth events</li>
+          </ul>
+        </div>
+        <div class="slist" data-reveal>
+          <h3>Who delivers it</h3>
+          <ul>
+            <li>Health Matters Clinic staff</li>
+            <li>Trained HMC volunteers</li>
+            <li>Licensed professionals where a session calls for one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATEMENT ===================== -->
+<div class="block statement ink" data-reveal>
+  <p>Two of our registered service locations are <em>schools.</em></p>
+  <p class="sub">Not venues we borrowed once. Addresses on Health Matters Clinic's waived testing site registration, which is a document rather than a claim.</p>
+</div>
+
+<!-- ===================== SERVICE SITES ===================== -->
+<section id="sites">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Service sites</p>
+      <h2>Registered at the school gate.</h2>
+      <p class="lede">Health Matters Clinic's registered service locations run from Skid Row to Watts. Two of them are school campuses.</p>
+    </div>
+    <div class="sites">
+      <div class="site" data-reveal>
+        <h3>Ingenium Clarion Charter Middle School</h3>
+        <address>13305 San Pedro St<br>Los Angeles, CA 90061</address>
+      </div>
+      <div class="site" data-reveal>
+        <h3>Thomas Jefferson High School</h3>
+        <address>1319 E 41st St<br>Los Angeles, CA 90011</address>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ON CAMPUS ===================== -->
+<section id="oncampus" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">On campus</p>
+      <h2>How we work in a school.</h2>
+      <p class="lede">Schools carry a duty of care that no outside organization gets to shortcut. Ours is the easier job. We follow the school's rules, and we make it simple to say yes.</p>
+    </div>
+    <div class="opsgrid">
+      <div class="slist" data-reveal>
+        <h3>Before anyone arrives</h3>
+        <ul>
+          <li>Every HMC volunteer completes core volunteer training before any community-facing work</li>
+          <li>Staff and volunteers follow the school's own policies, including any clearance or background check the site requires</li>
+          <li>Sessions are scheduled with the site principal, around the school calendar</li>
+        </ul>
+      </div>
+      <div class="slist" data-reveal>
+        <h3>What we bring</h3>
+        <ul>
+          <li>Qualified staff, trained volunteers, and licensed professionals where a session needs one</li>
+          <li>Materials, supplies and educational resources</li>
+          <li>Registration, and follow-up after the session where it applies</li>
+        </ul>
+      </div>
+      <div class="slist" data-reveal>
+        <h3>What we publish</h3>
+        <ul>
+          <li>No student names</li>
+          <li>No photographs of students</li>
+          <li>Program descriptions, dates and locations, which is what you see on this page</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GET INVOLVED ===================== -->
+<section id="join" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Join the work</p>
+      <h2>Somebody did this for you.</h2>
+      <p class="lede">Most people can name the adult who told them what they were capable of. Very few of them were paid to be there.</p>
+    </div>
+    <div class="involve">
+      <div class="icard" data-reveal>
+        <span class="tag">Train and mentor</span>
+        <h3>Become a volunteer</h3>
+        <p>Every HMC volunteer completes core volunteer training before working with the community. Training and hours are tracked in your volunteer record.</p>
+        <ul>
+          <li>Mentoring and enrichment sessions</li>
+          <li>Health education and family activity roles</li>
+          <li>Recurring work at the same campus, not one-off shifts</li>
+        </ul>
+        <div><a class="hmc-btn hmc-btn-primary" data-hmc-label="Get started" href="https://volunteer.healthmatters.clinic">Get started</a></div>
+      </div>
+      <div class="icard pop" data-reveal>
+        <span class="tag">Look first</span>
+        <h3>Take the tour</h3>
+        <p>Not ready to sign up? The tour walks through how volunteering works, what training covers, and what a shift asks of you, before you commit to anything.</p>
+        <div><a class="hmc-btn hmc-btn-secondary" data-hmc-label="Take the tour" href="https://volunteer.healthmatters.clinic/tour">Take the tour</a></div>
+      </div>
+      <div class="icard" data-reveal>
+        <span class="tag">Fund a school year</span>
+        <h3>Donate</h3>
+        <p>The school pays nothing, so somebody else does. A donation covers the materials, the supplies and the people who run the sessions.</p>
+        <div><a class="hmc-btn hmc-btn-primary" data-hmc-label="Donate" href="https://www.healthmatters.clinic/donate">Donate</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BRING US TO YOUR SCHOOL ===================== -->
+<section id="school" style="padding-top:0">
+  <div class="wrap">
+    <div class="shipbox" data-reveal>
+      <h3>Bring us to your school</h3>
+      <p>Principals, assistant principals, afterschool coordinators and community school leads can ask for a session, a series, or a school year. Tell us four things and we will tell you what we can run.</p>
+      <ul>
+        <li>The campus and the grade levels</li>
+        <li>What you are trying to reach students with</li>
+        <li>Whether you want a single session or a recurring block</li>
+        <li>The term or the window you have in mind</li>
+      </ul>
+      <p>Email <a href="mailto:partner@healthmatters.clinic">partner@healthmatters.clinic</a> or call <a href="tel:+13239904325">(323) 990-4325</a>. Every request gets a reply.</p>
+      <div class="cta-row" style="margin-top:6px">
+        <a class="hmc-btn hmc-btn-secondary" data-hmc-label="Email the team" href="mailto:partner@healthmatters.clinic?subject=Youth%20Mentorship%20and%20STEAM%20at%20our%20school">Email the team</a>
+        <a class="hmc-btn hmc-btn-secondary" data-hmc-label="Partner portal" href="https://partner.healthmatters.clinic">Partner portal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap foot-inner">
+
+    <div class="faq-head">
+      <h3 class="faq-title">Questions</h3>
+      <p class="faq-intro">What schools, parents and volunteers ask before we come out.</p>
+    </div>
+
+    <div class="faq-groups">
+      <div class="faq-group">
+        <h5>The program</h5>
+        <details class="faq-item"><summary>What is Youth Mentorship and STEAM?</summary><div class="faq-answer">
+          <p>Health Matters Clinic's school-based youth program. Afterschool enrichment, mentoring sessions, science and engineering fairs, and health and wellness programming on campus, built on the youth STEAM curriculum HMC wrote and launched in 2022.</p>
+        </div></details>
+        <details class="faq-item"><summary>What ages do you work with?</summary><div class="faq-answer">
+          <p>Elementary, middle and high school. The work runs from afterschool enrichment at 107th Street Elementary and STEAM Magnet through to a science and engineering design fair at Morningside High School.</p>
+        </div></details>
+        <details class="faq-item"><summary>Does it cost the school anything?</summary><div class="faq-answer">
+          <p>No. Health Matters Clinic services are provided at no charge to the school, and every community-facing HMC service is free with no insurance, referral or identification required.</p>
+          <p>Free to receive is not free to run. Materials, supplies and staffing are paid for by sponsors, grants and donors.</p>
+        </div></details>
+        <details class="faq-item"><summary>What is the Ingenium agreement?</summary><div class="faq-answer">
+          <p>Ingenium Schools has named Health Matters Clinic an approved on-site wellness partner providing recurring health and wellness programming for students and families during the 2025-2026 school year. It took effect on November 18, 2025 and runs to June 30, 2026.</p>
+          <p>Under it HMC runs a quarterly community health fair, a monthly wellness workshop series, and ongoing outreach and student service-learning at one Ingenium campus.</p>
+        </div></details>
+      </div>
+
+      <div class="faq-group">
+        <h5>On campus</h5>
+        <details class="faq-item"><summary>Who comes onto the campus?</summary><div class="faq-answer">
+          <p>Health Matters Clinic staff, trained HMC volunteers, and licensed professionals where a session calls for one. Everyone follows the school's own policies, including any clearance or background check the site requires.</p>
+        </div></details>
+        <details class="faq-item"><summary>What training do volunteers complete?</summary><div class="faq-answer">
+          <p>Every HMC volunteer completes core volunteer training before any community-facing work. Training and hours are tracked in the volunteer's record.</p>
+          <p>New to HMC? <a href="https://volunteer.healthmatters.clinic/tour">Take the tour</a> first, then start at <a href="https://volunteer.healthmatters.clinic">volunteer.healthmatters.clinic</a>.</p>
+        </div></details>
+        <details class="faq-item"><summary>Why are there no photographs of students here?</summary><div class="faq-answer">
+          <p>Because we do not publish images of the young people we work with, and we do not name them. What this page shows instead is where we went, when, and what we ran.</p>
+        </div></details>
+      </div>
+
+      <div class="faq-group">
+        <h5>Working with us</h5>
+        <details class="faq-item"><summary>Can you come to our school?</summary><div class="faq-answer">
+          <p>Often, yes. Email <a href="mailto:partner@healthmatters.clinic">partner@healthmatters.clinic</a> with the campus, the grade levels, what you want students to get out of it, and the term you have in mind.</p>
+        </div></details>
+        <details class="faq-item"><summary>Can I volunteer if I am not a teacher or a clinician?</summary><div class="faq-answer">
+          <p>Yes. Mentoring, enrichment, health education and family activity roles are non-clinical. Clinical tasks are performed only by people licensed to perform them.</p>
+        </div></details>
+        <details class="faq-item"><summary>Where do the dates on this page come from?</summary><div class="faq-answer">
+          <p>Health Matters Clinic's own 2023 outreach log, and the Ingenium Schools agreement. Where the log records a month or a season rather than a day, this page says so.</p>
+        </div></details>
+      </div>
+    </div>
+
+    <div class="foot-brand">
+      <div>
+        <a class="foot-logo" href="https://www.healthmatters.clinic"><img src="./assets/site/hmc-icon-512.png" alt="Health Matters Clinic" width="56" height="56" loading="lazy"></a>
+        <p>A Los Angeles nonprofit advancing health equity so everyone has the opportunity to live their healthiest life. Helping + Healing since 2020.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h6>Get involved</h6>
+          <a href="#join">Volunteer</a>
+          <a href="https://www.healthmatters.clinic/donate">Donate</a>
+          <a href="#school">Bring us to your school</a>
+          <a href="https://partner.healthmatters.clinic">Partner portal</a>
+        </div>
+        <div class="foot-col">
+          <h6>HMC</h6>
+          <a href="https://www.healthmatters.clinic">Main site</a>
+          <a href="https://www.healthmatters.clinic/programs">Programs</a>
+          <a href="https://eventfinder.healthmatters.clinic">Event Finder</a>
+          <a href="https://directory.healthmatters.clinic">Resource directory</a>
+        </div>
+        <div class="foot-col">
+          <h6>Contact</h6>
+          <a href="mailto:contact@healthmatters.clinic">contact@healthmatters.clinic</a>
+          <a href="tel:+13239904325">(323) 990-4325</a>
+          <a href="https://www.healthmatters.clinic/contact-us">Contact form</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-legal">
+      <div>&copy; 2026 Health Matters Clinic. All rights reserved. 501(c)(3) Nonprofit.<br>1360 S Figueroa St, Suite D390, Los Angeles, CA 90015. EIN 85-3784250.</div>
+      <div>
+        <a href="https://www.healthmatters.clinic/privacy-policy">Privacy</a>
+        <a href="https://www.healthmatters.clinic/terms">Terms</a>
+        <a href="https://www.healthmatters.clinic/cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/vendor/gsap.min.js"></script>
+<script src="./assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="./assets/js/vendor/lenis.min.js"></script>
+<script src="./assets/js/hmc-immersive.js"></script>
+<script src="./assets/site/hmc-buttons-1.0.4.js"></script>
+</body>
+</html>
