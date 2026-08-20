@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Youth Leadership and STEAM | Health Matters Clinic</title>
-<meta name="description" content="Youth leadership, mentorship and health career pathways with young people ages 12 to 26 across South Los Angeles, plus enrichment and STEAM programming on partner campuses. Culturally rooted, healing-centered, and free.">
+<title>Youth and Future Health Leaders | Health Matters Clinic</title>
+<meta name="description" content="Health Matters Clinic creates spaces where young people can explore health, build confidence, develop meaningful relationships, discover their strengths, and begin imagining their futures. We meet young people where they are and help them see where they can go.">
 <link rel="canonical" href="https://youth.healthmatters.clinic/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Youth Leadership and STEAM | Health Matters Clinic">
-<meta property="og:description" content="Mentoring, enrichment and STEAM sessions inside Los Angeles schools. Same campuses, year after year, and a signed agreement for the 2025-2026 school year.">
+<meta property="og:title" content="Youth and Future Health Leaders | Health Matters Clinic">
+<meta property="og:description" content="The future is already in the room. Health education, mentoring, STEAM, leadership and career exploration for young people across Los Angeles.">
 <meta property="og:url" content="https://youth.healthmatters.clinic/">
 <meta name="twitter:card" content="summary">
 
@@ -210,25 +210,89 @@ footer a{color:var(--hmc-accent)}
 .skip{position:absolute;left:-9999px}
 .skip:focus{left:20px;top:20px;z-index:99;background:#fff;color:#0a0a0a;padding:12px 18px;border-radius:999px}
 </style>
+<style>
+/* ---------- domain grid ---------- */
+.doms{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:1px;background:rgba(10,10,10,.1);border:1px solid rgba(10,10,10,.1);border-radius:16px;overflow:hidden;margin-top:34px}
+.dom{background:#fff;padding:26px 24px}
+.dom h3{margin:0 0 9px;font-size:19px;font-weight:600;letter-spacing:-.01em}
+.dom p{margin:0;font-size:15px;color:#3f3f4a;line-height:1.58}
+.dom .tag{display:block;font-family:'Questrial',sans-serif;font-size:15px;color:#2333df;margin:0 0 7px}
+
+/* ---------- explored chips ---------- */
+.explored{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:16px;margin-top:28px}
+.exp{background:#fff;border:1px solid rgba(10,10,10,.1);border-radius:14px;padding:20px}
+.exp h4{margin:0 0 7px;font-size:16px}
+.exp p{margin:0;font-size:14.5px;color:#4a4a55;line-height:1.55}
+
+/* ---------- the ladder ---------- */
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(212px,1fr));gap:18px;margin-top:32px}
+.rung{background:#fff;border:1px solid rgba(10,10,10,.1);border-radius:14px;padding:22px}
+.rung b{display:block;font-family:'Questrial',sans-serif;font-size:22px;font-weight:400;margin-bottom:8px}
+.rung p{margin:0;font-size:15px;color:#4a4a55;line-height:1.55}
+
+/* ---------- futures field, after the OS treatment ----------
+   Words scattered around a centred line, the way the worlds sections on
+   os.healthmatters.clinic read. Positions are fixed per word rather than
+   randomised so the arrangement is composed, and it holds still for anyone who
+   asks for reduced motion. */
+.futures{position:relative;background:var(--hmc-hero);color:#fff;padding:clamp(90px,13vw,170px) 0;overflow:hidden}
+.f-stage{position:relative;min-height:clamp(420px,50vw,620px);display:flex;align-items:center;justify-content:center}
+/* Wide enough that the line breaks where the sentence does, not after every
+   word. 20ch squeezed it to one word per line at desktop width. */
+.f-centre{position:relative;z-index:3;text-align:center;max-width:30ch;margin:0 auto;padding:0 12px}
+.f-centre h2{font-family:'Questrial',sans-serif;font-size:clamp(26px,3.5vw,44px);line-height:1.12;margin:0;font-weight:400;letter-spacing:-.02em;text-wrap:balance}
+.f-centre h2 em{font-style:normal;color:var(--hmc-accent)}
+.f-centre p{margin:18px 0 0;font-size:16px;color:rgba(255,255,255,.66)}
+.f-word{
+  position:absolute;white-space:nowrap;
+  font-family:'Questrial',sans-serif;letter-spacing:-.01em;
+  color:rgba(255,255,255,.34);font-size:clamp(15px,2vw,30px);
+  animation:fdrift 13s ease-in-out infinite;
+}
+.f-word[data-d="3"]{color:rgba(255,255,255,.82)}
+.f-word[data-d="1"]{color:rgba(255,255,255,.24);font-size:clamp(13px,1.4vw,20px)}
+.f-word:nth-child(even){animation-duration:17s;animation-delay:-4s}
+.f-word:nth-child(3n){animation-duration:21s;animation-delay:-9s}
+@keyframes fdrift{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+@media (prefers-reduced-motion:reduce){.f-word{animation:none}}
+@media (max-width:760px){
+  .f-word[data-d="1"]{display:none}
+  .f-stage{min-height:430px}
+}
+
+/* ---------- intake grid ---------- */
+.intake{display:grid;grid-template-columns:repeat(auto-fit,minmax(226px,1fr));gap:1px;background:rgba(10,10,10,.1);border:1px solid rgba(10,10,10,.1);border-radius:16px;overflow:hidden;margin-top:30px}
+.tak{background:#fff;padding:24px}
+.tak h4{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#2333df}
+.tak p{margin:0;font-size:15px;color:#3f3f4a;line-height:1.55}
+
+/* ---------- site cards ---------- */
+.places{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:18px;margin-top:32px}
+.place{background:#fff;border:1px solid rgba(10,10,10,.1);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.place h3{margin:0;font-size:19px}
+.place .role{font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#767d8e}
+.place ul{margin:0;padding-left:18px;font-size:14.5px;color:#4a4a55;line-height:1.7}
+.place .go{margin-top:auto}
+</style>
 </head>
 <body>
+
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- ===================== HERO ===================== -->
 <header class="hero hmc-parallax-hero">
   <div class="hero-field" aria-hidden="true"></div>
-  <div class="hero-word" aria-hidden="true">STEAM</div>
+  <div class="hero-word" aria-hidden="true">FUTURE</div>
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="hero-grain" aria-hidden="true"></div>
   <div class="hero-inner">
     <div class="wrap">
-      <p class="hero-eyebrow">Youth Leadership and STEAM</p>
-      <h1 class="hero-title">Young people are <em>already leading.</em></h1>
-      <p class="hero-tagline">Health Matters Clinic builds leadership, mentorship and health career pathways with young people ages 12 to 26 across South Los Angeles, and runs enrichment and STEAM programming for younger students on the campuses that invite us back.</p>
+      <p class="hero-eyebrow">Youth and Future Health Leaders</p>
+      <h1 class="hero-title">The future is <em>already in the room.</em></h1>
+      <p class="hero-tagline">Young people arrive with questions, ideas, curiosity, and a growing sense of who they might become. Sometimes they know exactly where they are going. Sometimes they just need the opportunity to discover what is possible.</p>
+      <p class="hero-tagline">Health Matters Clinic creates spaces where young people can explore health, build confidence, develop meaningful relationships, discover their strengths, and begin imagining their futures. We meet young people where they are and help them see where they can go.</p>
       <div class="cta-row">
-        <a class="hmc-btn hmc-btn-primary" href="#tracks">How it works</a>
-        <a class="hmc-btn hmc-btn-secondary" href="#pathways">Career pathways</a>
-        <a class="hmc-btn hmc-btn-secondary" href="#school">Partner with us</a>
+        <a class="hmc-btn hmc-btn-primary" href="#approach">Explore our approach</a>
+        <a class="hmc-btn hmc-btn-secondary" href="#partner">Bring HMC to your school</a>
       </div>
     </div>
   </div>
@@ -236,434 +300,283 @@ footer a{color:var(--hmc-accent)}
 
 <main id="main">
 
-<!-- ===================== WHY IT WORKS ===================== -->
-<section id="tracks">
-  <div class="wrap">
-    <div class="twoup">
-      <div data-reveal>
-        <p class="eyebrow">How it works</p>
-        <h2>Three ways in, <em>one relationship.</em></h2>
-        <p class="lede">Young people join through whichever door fits, and stay connected to the same people as they move between them.</p>
-        <p><strong>Youth civic engagement.</strong> Young people identify what is harming health in their own neighborhood and take it on. That means learning how decisions get made, gathering what their community actually says, and bringing it to the people who set policy. Our young people have taken part in the Youth Collective and Wellbeing work in Service Planning Area 6 and in Take Action for Mental Health.</p>
-        <p><strong>Mentorship and relationship building.</strong> Consistent adults who come back to the same campus on a schedule the school sets, so a young person can name what they want to do next and find someone in the room who knows how to help them get there.</p>
-        <p><strong>Peer-led leadership.</strong> Young people who have been through the programming go on to facilitate it, first alongside staff and then on their own, earning a Health Matters Clinic completion record as they go.</p>
-      </div>
-      <div class="method" data-reveal>
-        <h3>The program at a glance</h3>
-        <dl>
-          <dt>Program</dt><dd>Youth Mentorship and STEAM</dd>
-          <dt>Curriculum</dt><dd>Written and launched by Health Matters Clinic in 2022</dd>
-          <dt>Campuses</dt><dd>Elementary, middle and high schools in Los Angeles</dd>
-          <dt>Formats</dt><dd>Afterschool enrichment, mentoring sessions, science and engineering fairs, camps, and school and community events</dd>
-          <dt>Cost</dt><dd>No charge to the school</dd>
-          <dt>This year</dt><dd>Approved on-site wellness partner at Ingenium Schools for the 2025-2026 school year</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== THIS SCHOOL YEAR ===================== -->
-<!-- The live MOU is the strongest thing on the page, so it runs before the
-     history rather than after it. Everything in this section is present tense. -->
-<section class="dark-sec" id="now">
+<!-- ===================== MORE THAN A PROGRAM ===================== -->
+<section id="approach">
   <div class="wrap">
     <div class="measure" data-reveal>
-      <p class="eyebrow">This school year</p>
-      <h2>We are on a campus <em>right now.</em></h2>
-      <p class="lede">Ingenium Schools has named Health Matters Clinic an approved on-site wellness partner, providing recurring health and wellness programming for students and families through the 2025-2026 school year.</p>
-      <p style="color:rgba(255,255,255,.78)">The agreement took effect on November 18, 2025 and runs to June 30, 2026. Ingenium provides the room. HMC provides the staff, the volunteers, the materials and the program. None of it is billed to the school.</p>
-      <p style="color:rgba(255,255,255,.78)">Three things run on that campus this year.</p>
+      <p class="eyebrow">More than a program</p>
+      <h2>There is more than one way <em>to find your thing.</em></h2>
+      <p class="lede">One young person may come to us because they love science. Another may have questions they have not felt comfortable asking anywhere else.</p>
+      <p>Someone else may already know they want to become a nurse, work in medicine, design technology, or help make their community healthier. There is room for all of that here.</p>
+      <p>HMC brings health education, mentoring, STEAM, leadership, career exploration, and service together in ways that give young people room to learn, ask questions, try something new, and discover what matters to them.</p>
     </div>
-    <div class="steps">
-      <div class="step" data-reveal>
-        <span class="when">Quarterly</span>
-        <h3>Community health fair</h3>
-        <p>Screenings, health education and a resource fair, open to students, to their families, and to the neighborhood around the school.</p>
-      </div>
-      <div class="step" data-reveal>
-        <span class="when">Monthly</span>
-        <h3>Wellness workshop series</h3>
-        <p>A rotating set of topics. Mental health and stress management. Nutrition and food access. Financial wellness and employment readiness. Physical activity. Healthy relationships and social connection.</p>
-      </div>
-      <div class="step" data-reveal>
-        <span class="when">Ongoing</span>
-        <h3>Outreach and service learning</h3>
-        <p>Volunteer recruitment, student service-learning opportunities, and community drives including hygiene kits and a back-to-school health day.</p>
-      </div>
-    </div>
-    <p class="note">One school site, at 13305 San Pedro Street in Los Angeles. Dates are set with the site principal against the school calendar.</p>
-  </div>
-</section>
 
-<!-- ===================== STATEMENT ===================== -->
-<div class="block statement" data-reveal>
-  <p>Consistency is the program.</p>
-  <p class="sub">Between April 28 and May 8, 2023, Health Matters Clinic ran afterschool enrichment and mentoring at 107th Street Elementary and STEAM Magnet on four separate days. A further mentoring and education session followed that spring.</p>
-</div>
-
-<!-- ===================== 107TH STREET ===================== -->
-<section id="anchor">
-  <div class="wrap">
-    <div class="twoup">
-      <div data-reveal>
-        <p class="eyebrow">One school, over and over</p>
-        <h2>107th Street Elementary and STEAM Magnet.</h2>
-        <p class="lede">In spring 2023 we ran afterschool enrichment and mentoring on one South Los Angeles campus four times in eleven days, then returned again later that term.</p>
-        <p>Students from 107th Street also took part in the JREAM Foundation Youth Camp that year, where our team delivered the same enrichment and mentoring programming. JREAM is the foundation of professional athlete Kayvon Thibodeaux.</p>
-        <p>Showing up on a set schedule is what turns a visit into a program, and it is how a young person ends up with an adult who knows what they are working toward.</p>
+    <div class="doms">
+      <div class="dom" data-reveal>
+        <h3>Health and Wellness</h3>
+        <p>Helping young people understand their bodies, emotions, health, and the everyday choices that support their well-being.</p>
       </div>
-      <ol class="cycle" style="margin-top:0">
-        <li class="cyc" data-reveal>
-          <h3>The room gets quiet</h3>
-          <p>The first session is an introduction, and an invitation.</p>
-        </li>
-        <li class="cyc" data-reveal>
-          <h3>The questions start</h3>
-          <p>Once we are familiar rather than visiting, real questions get asked.</p>
-        </li>
-        <li class="cyc" data-reveal>
-          <h3>Something sticks</h3>
-          <p>By the fourth, a young person can name a next step, and there is someone there to help them take it.</p>
-        </li>
-      </ol>
+      <div class="dom" data-reveal>
+        <h3>Healthy Choices and Prevention</h3>
+        <p>Building knowledge and skills around decision-making, peer influence, healthy coping, substance awareness, and knowing when and how to seek support.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <h3>Connection and Mentoring</h3>
+        <p>Creating meaningful relationships with adults and peers who listen, encourage, challenge, and show up consistently.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <h3>STEAM and Discovery</h3>
+        <p>Giving young people opportunities to explore science, technology, engineering, creativity, innovation, and real-world problem solving.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <h3>Future Health Leaders</h3>
+        <p>Introducing young people to the many ways they can contribute to healthcare, from nursing and medicine to allied health, community health, behavioral health, and health technology.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <h3>Leadership and Pathways</h3>
+        <p>Helping young people build confidence, communication, teamwork, empathy, and leadership while creating opportunities for service, civic engagement, career exploration, and continued learning.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== THE RECORD ===================== -->
-<section id="record" style="padding-top:0">
+<!-- ===================== ROOM FOR THE CONVERSATION ===================== -->
+<section class="dark-sec" id="conversation">
   <div class="wrap">
     <div class="measure" data-reveal>
-      <p class="eyebrow">The record</p>
-      <h2>Where we have been.</h2>
-      <p class="lede">Youth and school programming across elementary, middle and high school campuses, including design fairs, camps, mentoring sessions and community days.</p>
+      <p class="eyebrow">We come with a plan</p>
+      <h2>We leave room <em>for the conversation.</em></h2>
+      <p class="lede">Every HMC experience has a purpose. But young people are not worksheets.</p>
+      <p>They bring their own questions, experiences, interests, and ideas into the room. Sometimes those things take the conversation somewhere we did not expect. That is not a distraction from the work. It is part of the work.</p>
+      <p>We listen for what young people are telling us, then build from there.</p>
+      <p>A conversation about stress can become a conversation about healthy coping. A question about vaping can become an opportunity to talk about the body, pressure, curiosity, and choices. An interest in nursing can open the door to an entire world of healthcare careers. A young person's idea can become a service project, a leadership opportunity, or the first step toward a future they had not imagined before.</p>
+      <p class="lede" style="margin-top:26px">The structure is ours. The future belongs to them.</p>
     </div>
-    <ul class="log">
-      <li class="log-item" data-reveal>
-        <span class="log-date">April 15, 2023</span>
+  </div>
+</section>
+
+<!-- ===================== IN PRACTICE ===================== -->
+<section id="practice">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">In practice</p>
+      <h2>Listening to students, <em>building toward their futures.</em></h2>
+      <p class="lede">Through a partnership with the 107th Street Elementary afterschool enrichment and mentoring program, HMC worked with a small girls cohort around health, wellness, personal growth, and future possibilities.</p>
+      <p>During mentoring conversations, students shared questions and experiences related to alcohol, vaping, and substances they had encountered. Rather than responding with shame or judgment, HMC used the opportunity to provide age-appropriate guidance around healthy decision-making, understanding what substances can do to the body, responding to curiosity and peer pressure, healthy coping, and identifying trusted adults.</p>
+      <p>But another powerful theme emerged.</p>
+      <p class="lede">Seven of the eight students in the cohort shared an interest in pursuing careers in nursing, medicine, or allied health.</p>
+      <p>HMC connected the conversation about health today with the futures students said they wanted to build. Students were introduced to the many roles that make up the healthcare workforce, from nurses and medical professionals to allied health, community health, behavioral health, and healthcare technology. They explored the skills and habits that can help them begin building toward those goals now.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top:44px" data-reveal>What students explored</p>
+    <div class="explored">
+      <div class="exp" data-reveal><h4>Healthy choices</h4><p>Understanding how everyday decisions can affect the body and brain.</p></div>
+      <div class="exp" data-reveal><h4>Vaping, alcohol and substance awareness</h4><p>Age-appropriate conversations focused on curiosity, safety, peer pressure, trusted adults, and making informed choices.</p></div>
+      <div class="exp" data-reveal><h4>Healthy coping</h4><p>Exploring positive ways to respond to stress, difficult emotions, and challenging situations.</p></div>
+      <div class="exp" data-reveal><h4>Healthcare careers</h4><p>Discovering opportunities in nursing, medicine, allied health, community health, behavioral health, and health technology.</p></div>
+      <div class="exp" data-reveal><h4>My future in health</h4><p>Connecting students' interests and goals with steps they can begin taking today.</p></div>
+    </div>
+
+    <p class="lede" style="margin-top:36px;max-width:60ch" data-reveal>The approach. Listen first. Meet students where they are. Build on what matters to them. Help them see where they can go.</p>
+  </div>
+</section>
+
+<!-- ===================== THE SIX TRACKS ===================== -->
+<section id="tracks" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Every question can lead somewhere</p>
+      <h2>Six ways in, <em>and they intersect.</em></h2>
+      <p class="lede">The 107th Street experience is one example of how HMC's youth work brings different areas of learning together around the interests and aspirations of the young people in the room.</p>
+    </div>
+
+    <div class="doms">
+      <div class="dom" data-reveal>
+        <span class="tag">Know yourself.</span>
+        <h3>Health and Wellness</h3>
+        <p>Explore the body, emotions, movement, nutrition, mental health, and the foundations of well-being.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <span class="tag">Trust yourself.</span>
+        <h3>Healthy Choices and Prevention</h3>
+        <p>Build the skills to navigate curiosity, pressure, and everyday decisions while knowing when asking for help is the right choice.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <span class="tag">See yourself here.</span>
+        <h3>Future Health Leaders</h3>
+        <p>Meet the people and professions shaping healthcare and discover where your interests could take you.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <span class="tag">Stay curious.</span>
+        <h3>STEAM and Discovery</h3>
+        <p>Experiment. Build. Investigate. Solve problems. See what happens when curiosity has somewhere to go.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <span class="tag">Use your voice.</span>
+        <h3>Leadership and Life Skills</h3>
+        <p>Build communication, confidence, empathy, teamwork, problem-solving, decision-making, and goal-setting skills.</p>
+      </div>
+      <div class="dom" data-reveal>
+        <span class="tag">Keep going.</span>
+        <h3>Pathways and Service</h3>
+        <p>Move from exploration into service, civic engagement, peer leadership, volunteering, career exploration, and deeper learning opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NOT EVERY STUDENT STARTS THE SAME ===================== -->
+<section id="starts" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Not every student starts in the same place</p>
+      <h2>And they <em>do not have to.</em></h2>
+      <p>One cohort may be excited about healthcare. Another may be drawn to engineering. Another may need a place to build confidence, ask questions, or figure out what comes next.</p>
+      <p>HMC's youth programming is designed to meet young people where they are while giving them room to discover where they want to go. The tracks are not separate boxes. They intersect.</p>
+      <p>A STEAM experience can spark a career interest. A mentoring conversation can uncover a health concern. A health lesson can lead to a conversation about nursing. A service project can become a leadership opportunity.</p>
+      <p>And a young person who once said, "I don't know," can eventually begin saying:</p>
+      <p class="lede" style="font-size:clamp(24px,3.4vw,40px);font-family:'Questrial',sans-serif;margin-top:20px">"Maybe I could."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COHORTS ===================== -->
+<section class="dark-sec" id="cohorts">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Cohort-based experiences</p>
+      <h2>Built around <em>the group in the room.</em></h2>
+      <p class="lede">Some groups benefit from a more focused experience built around shared interests, goals, age, or community context.</p>
+      <p>HMC can develop cohort-based mentoring and enrichment experiences that bring together the right combination of health education, mentoring, leadership, career exploration, STEAM, and service.</p>
+      <p class="eyebrow" style="margin-top:34px">Featured cohort</p>
+      <h3 style="font-family:'Questrial',sans-serif;font-size:clamp(22px,2.8vw,32px);font-weight:400;margin:0 0 10px">107th Street Girls Cohort</h3>
+      <p>Health, healthy choices and future health careers. The cohort became an opportunity to connect conversations about health and healthy decision-making with students' growing interest in healthcare careers.</p>
+      <p class="lede" style="margin-top:24px">The goal is not to tell young people who to become. It is to help them see more of what they could become.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INGENIUM ===================== -->
+<section id="home">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Our school-based home</p>
+      <h2>HMC's school-based work <em>has a home.</em></h2>
+      <p class="lede">Through our ongoing partnership with Ingenium Schools, HMC provides a consistent presence where students and families can continue to encounter health education, wellness, mentoring, enrichment, community connection, and service opportunities throughout the school year.</p>
+      <p>Our work continues through the 2026 to 2027 school year, creating something that a single workshop cannot. Continuity.</p>
+      <p>A student does not have to wonder whether they will see us again. A mentor can get to know a student over time. A conversation can continue. An interest can become a goal. A goal can become a next step.</p>
+      <p class="lede" style="margin-top:24px">Showing up once can start something. Showing up consistently gives it somewhere to grow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHERE WE HAVE SHOWN UP ===================== -->
+<section id="places" style="padding-top:0">
+  <div class="wrap">
+    <div class="measure" data-reveal>
+      <p class="eyebrow">Where we have had the chance to show up</p>
+      <h2>Schools and youth-serving <em>organizations across LA.</em></h2>
+      <p class="lede">Creating opportunities for young people to learn, explore, lead, and connect.</p>
+    </div>
+    <div class="places">
+      <div class="place" data-reveal>
+        <p class="role">Afterschool enrichment and mentoring</p>
+        <h3>107th Street Elementary School</h3>
+        <ul><li>Health and wellness</li><li>Healthy choices</li><li>Mentoring</li><li>Future health careers</li></ul>
+        <div class="go"><a class="hmc-btn hmc-btn-secondary" href="#practice">Explore the story</a></div>
+      </div>
+      <div class="place" data-reveal>
+        <p class="role">Afterschool enrichment and mentoring</p>
+        <h3>Edwin Markham Middle School</h3>
+        <ul><li>Youth development</li><li>Mentoring</li><li>Enrichment</li></ul>
+      </div>
+      <div class="place" data-reveal>
+        <p class="role">Science and engineering design fair</p>
         <h3>Morningside High School</h3>
-        <p>ISD Science and Engineering Design Fair.</p>
-      </li>
-      <li class="log-item deep" data-reveal>
-        <span class="log-date">April 28, 2023</span>
-        <h3>107th Street Elementary and STEAM Magnet</h3>
-        <p>Afterschool enrichment and mentoring.</p>
-      </li>
-      <li class="log-item deep" data-reveal>
-        <span class="log-date">May 1, 2023</span>
-        <h3>107th Street Elementary and STEAM Magnet</h3>
-        <p>Afterschool enrichment and mentoring.</p>
-      </li>
-      <li class="log-item deep" data-reveal>
-        <span class="log-date">May 8, 2023</span>
-        <h3>107th Street Elementary</h3>
-        <p>Afterschool enrichment and mentoring.</p>
-      </li>
-      <li class="log-item pop" data-reveal>
-        <span class="log-date">Spring 2023</span>
-        <h3>107th Street Elementary and STEAM Magnet</h3>
-        <p>A further mentoring and education session. The day is recorded without a date in the log.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">May 31, 2023</span>
-        <h3>Youth Collective and Wellbeing, SPA 6</h3>
-        <p>Take Action for Mental Health.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">June 24, 2023</span>
-        <h3>First Annual Youth Football and Cheer Camp</h3>
-        <p>Health Matters Clinic on site for the camp.</p>
-      </li>
-      <li class="log-item pop" data-reveal>
-        <span class="log-date">2023</span>
-        <h3>JREAM Foundation Youth Camp</h3>
-        <p>Afterschool enrichment and mentoring for students at 107th Street Elementary, at the youth camp run by Kayvon Thibodeaux's foundation.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">August 8, 2023</span>
-        <h3>Franklin D. Middle School</h3>
-        <p>Back to school, on campus.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">August 17, 2023</span>
-        <h3>Ingenium</h3>
-        <p>The first entry in the log for a school HMC now holds an agreement with.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">October 30, 2023</span>
-        <h3>Ingenium Middle</h3>
-        <p>Halloween Bash.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">October 30, 2023</span>
-        <h3>Neighborhood Youth Achievers</h3>
-        <p>Halloween party.</p>
-      </li>
-      <li class="log-item" data-reveal>
-        <span class="log-date">December 2023</span>
-        <h3>Neighborhood Youth Achievers</h3>
-        <p>Holiday party. The day is recorded as December without a date.</p>
-      </li>
-    </ul>
-    <p class="note">Entries are transcribed from Health Matters Clinic's 2023 outreach log. Where the log records a month or a season without a day, this page says so rather than picking one.</p>
-  </div>
-</section>
-
-<!-- ===================== KINETIC MARQUEE ===================== -->
-<div class="kinetic-wrap hmc-kinetic" aria-hidden="true">
-  <div class="hmc-kinetic-row">
-    <span>Mentorship</span><span class="o">STEAM</span><span class="accent">Los Angeles</span><span>Mentorship</span><span class="o">STEAM</span><span class="accent">Los Angeles</span>
-  </div>
-</div>
-
-<!-- ===================== THE CURRICULUM ===================== -->
-<section id="curriculum">
-  <div class="wrap">
-    <div class="twoup">
-      <div data-reveal>
-        <p class="eyebrow">The curriculum</p>
-        <h2>We wrote our own.</h2>
-        <p class="lede">In 2022 Health Matters Clinic wrote and launched its own youth STEAM curriculum, and it is what every session is built on.</p>
-        <p>Having our own curriculum means a principal can put the program on a calendar, a family knows what their young person is walking into, and outcomes can be measured the same way each time.</p>
-        <p>It is also what lets the work travel. A design fair at a high school, an afterschool block at an elementary campus and a summer camp are the same material meeting young people where they already are.</p>
-        <p>The curriculum is culturally rooted and healing-centered, written for Black and Latino communities in Los Angeles, and it treats stigma as the thing to move. In our Unstoppable programming, which shares that approach, comfort discussing mental health rose from 28 percent to 69 percent, awareness of local resources from 21 percent to 58 percent, and feeling equipped to support someone else from 22 percent to 53 percent.</p>
+        <ul><li>STEAM</li><li>Innovation</li><li>Problem-solving</li><li>Career exposure</li></ul>
       </div>
-      <div class="opsgrid" style="margin-top:0">
-        <div class="slist" data-reveal>
-          <h3>Where it has run</h3>
-          <ul>
-            <li>Elementary school, afterschool enrichment and mentoring</li>
-            <li>Middle school, on campus</li>
-            <li>High school, science and engineering design fair</li>
-            <li>Youth camps and community youth events</li>
-          </ul>
-        </div>
-        <div class="slist" data-reveal>
-          <h3>Who delivers it</h3>
-          <ul>
-            <li>Health Matters Clinic staff</li>
-            <li>Trained HMC volunteers</li>
-            <li>Licensed professionals where a session calls for one</li>
-          </ul>
-        </div>
+      <div class="place" data-reveal>
+        <p class="role">Enrichment, mentoring and leadership</p>
+        <h3>Youth camps and community programs</h3>
+        <ul><li>Taking youth development beyond the school day and into the community</li></ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== STATEMENT ===================== -->
-<div class="block statement ink" data-reveal>
-  <p>Two of our registered service locations are <em>schools.</em></p>
-  <p class="sub">Not venues we borrowed once. Addresses on Health Matters Clinic's waived testing site registration, which is a document rather than a claim.</p>
-</div>
-
-<!-- ===================== PREVENTION AND LINKAGE =====================
-     Elevate Youth California requires that a project can navigate a young person
-     to a higher level of substance use prevention or behavioral health care. HMC
-     can, and the infrastructure already exists, so it is stated rather than
-     implied. Deliberately does not lead with naloxone: that work is real and
-     protocolised, but EYC's unallowed list excludes overdose prevention and
-     reversal, so it belongs here as evidence of capability and trust rather than
-     as a funded activity. -->
-<section id="prevention">
+<!-- ===================== THE LADDER ===================== -->
+<section id="ladder" style="padding-top:0">
   <div class="wrap">
     <div class="measure" data-reveal>
-      <p class="eyebrow">Prevention and linkage</p>
-      <h2>Nobody gets handed <em>a phone number.</em></h2>
-      <p class="lede">When a young person needs more than a workshop, there is a route to it, and a person who walks them there.</p>
+      <p class="eyebrow">The path does not end when the program does</p>
+      <h2>A young person who discovers an interest <em>should have somewhere to take it.</em></h2>
+      <p class="lede">For students who want to keep going, HMC creates opportunities to move from exploration into deeper learning and experience.</p>
     </div>
-    <div class="opsgrid" style="margin-top:0">
-      <div class="slist" data-reveal>
-        <h3>What we screen and refer</h3>
-        <ul>
-          <li>Substance use referral assessment, completed with the participant and sent as a referral packet rather than a phone number</li>
-          <li>Behavioural health and mental health linkage through our care navigators</li>
-          <li>Food, housing, coverage and transportation, because these outrank clinical requests in our own survey data</li>
-        </ul>
-      </div>
-      <div class="slist" data-reveal>
-        <h3>Field capability</h3>
-        <ul>
-          <li>Overdose recognition education and naloxone distribution under a written standing order and California Health and Safety Code section 1714.22</li>
-          <li>A required training module and distribution log before any volunteer carries a kit</li>
-          <li>Street medicine in Skid Row since 2020, which is where much of what we know about access came from</li>
-        </ul>
-      </div>
-      <div class="slist" data-reveal>
-        <h3>Why young people use it</h3>
-        <ul>
-          <li>No appointment, no identification, no waiting room</li>
-          <li>Free, and free permanently</li>
-          <li>Consent first, and any question can be skipped</li>
-          <li>The same people, on a schedule, so asking is not a risk</li>
-        </ul>
+    <div class="ladder">
+      <div class="rung" data-reveal><b>Explore</b><p>Discover a profession. Find a subject you love. Ask questions.</p></div>
+      <div class="rung" data-reveal><b>Learn</b><p>Build knowledge through HMC Academy courses, mentoring, and guided experiences.</p></div>
+      <div class="rung" data-reveal><b>Serve</b><p>Put learning into practice through volunteering, community service, and real-world experiences.</p></div>
+      <div class="rung" data-reveal><b>Lead</b><p>Support peers. Facilitate. Advocate. Build something. Become the person who helps someone else see what is possible.</p></div>
+    </div>
+    <p class="lede" style="margin-top:30px;max-width:62ch" data-reveal>One experience can open a door. We want young people to know where the next doors are.</p>
+  </div>
+</section>
+
+<!-- ===================== THE FUTURES FIELD =====================
+     The OS treatment, borrowed on purpose: professions scattered around a
+     centred line, so the point lands visually rather than as a list. Positions
+     are set per word rather than randomised, so the composition is deliberate. -->
+<section class="futures" id="futures">
+  <div class="wrap">
+    <div class="f-stage">
+      <span class="f-word" data-d="3" style="left:4%;top:8%">The nurse.</span>
+      <span class="f-word" data-d="2" style="left:70%;top:4%">The engineer.</span>
+      <span class="f-word" data-d="1" style="left:26%;top:17%">The therapist.</span>
+      <span class="f-word" data-d="2" style="left:2%;top:36%">The scientist.</span>
+      <span class="f-word" data-d="3" style="left:66%;top:30%">The designer.</span>
+      <span class="f-word" data-d="1" style="left:80%;top:52%">The advocate.</span>
+      <span class="f-word" data-d="2" style="left:6%;top:62%">The entrepreneur.</span>
+      <span class="f-word" data-d="3" style="left:66%;top:82%">The community health leader.</span>
+      <span class="f-word" data-d="1" style="left:8%;top:90%">The person who decides to do something about it.</span>
+
+      <div class="f-centre" data-reveal>
+        <h2>Young people do not need us to decide their future. <em>They need us to help them see it.</em></h2>
+        <p>We do not know which one is sitting in the room yet. That is why we show up.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== PATHWAYS =====================
-     Ties the youth work to the HMC Academy so a young person who starts in a
-     school session can see the next step, and so the leadership and peer-led
-     track has somewhere to lead. Only released courses are named; anything still
-     in curriculum review says so, because advertising unfinished work reads as
-     unfinished rather than as growing. -->
-<section id="pathways">
+<!-- ===================== PARTNER ===================== -->
+<section id="partner">
   <div class="wrap">
     <div class="measure" data-reveal>
-      <p class="eyebrow">Career pathways</p>
-      <h2>A next step, <em>not just a session.</em></h2>
-      <p class="lede">Young people ages 12 to 26 who want to keep going move into the HMC Academy, where the coursework is free, self-paced and leads to a Health Matters Clinic completion record.</p>
+      <p class="eyebrow">Bring HMC to your students</p>
+      <h2>Tell us where you are starting. <em>We will help you imagine what is possible.</em></h2>
+      <p class="lede">Whether you are building an afterschool enrichment program, looking for a recurring mentoring partner, creating a health and wellness initiative, or helping students explore future careers, HMC can create an experience around your students and your school community.</p>
     </div>
-    <div class="opsgrid" style="margin-top:0">
-      <div class="slist" data-reveal>
-        <h3>Open now</h3>
-        <ul>
-          <li>Health Careers Exploration, eight courses covering the health professions, the education and licensing each one asks for, and how to build experience that counts</li>
-          <li>Volunteer service alongside our mobile health and street medicine teams, with the hours recorded</li>
-        </ul>
-      </div>
-      <div class="slist" data-reveal>
-        <h3>In curriculum review</h3>
-        <ul>
-          <li>Youth Mentorship and STEAM, the pathway version of the programming we run on campus</li>
-          <li>Field-Based Community Health, for young adults moving toward community health work</li>
-          <li>Mentor and Peer Leader, for young people ready to facilitate rather than attend</li>
-        </ul>
-      </div>
-      <div class="slist" data-reveal>
-        <h3>How a cohort works</h3>
-        <ul>
-          <li>Free, and no cost is ever introduced later</li>
-          <li>Self-paced coursework with a guided start date, so nobody is doing it alone</li>
-          <li>A completion record from Health Matters Clinic, awarded on the work</li>
-          <li>Open to young people, and to the family members who want to take it with them</li>
-        </ul>
-      </div>
+    <div class="intake">
+      <div class="tak" data-reveal><h4>Campus</h4><p>Grade levels and student population.</p></div>
+      <div class="tak" data-reveal><h4>Need</h4><p>What you want students to explore, understand, or experience.</p></div>
+      <div class="tak" data-reveal><h4>Format</h4><p>A single experience, recurring sessions, cohort, enrichment series, or school-year partnership.</p></div>
+      <div class="tak" data-reveal><h4>Timing</h4><p>The semester, school year, or timeframe you are planning around.</p></div>
     </div>
-    <div class="cta-row" style="margin-top:34px" data-reveal>
-      <a class="hmc-btn hmc-btn-primary" href="https://hub.healthmatters.clinic" target="_blank" rel="noopener noreferrer">Save my spot in the next cohort</a>
-      <a class="hmc-btn hmc-btn-secondary" href="https://unstoppable.healthmatters.clinic" target="_blank" rel="noopener noreferrer">Unstoppable workshops</a>
+    <div class="cta-row" style="margin-top:32px" data-reveal>
+      <a class="hmc-btn hmc-btn-primary" href="https://www.healthmatters.clinic/contact-us" target="_blank" rel="noopener noreferrer">Partner with HMC</a>
+      <a class="hmc-btn hmc-btn-secondary" href="https://hub.healthmatters.clinic" target="_blank" rel="noopener noreferrer">HMC Academy</a>
     </div>
   </div>
 </section>
 
-<!-- ===================== SERVICE SITES ===================== -->
-<section id="sites">
+<!-- ===================== CLOSE ===================== -->
+<section class="dark-sec" id="close" style="text-align:center">
   <div class="wrap">
-    <div class="measure" data-reveal>
-      <p class="eyebrow">Service sites</p>
-      <h2>Registered at the school gate.</h2>
-      <p class="lede">Health Matters Clinic's registered service locations run from Skid Row to Watts. Two of them are school campuses.</p>
-    </div>
-    <div class="sites">
-      <div class="site" data-reveal>
-        <h3>Ingenium Clarion Charter Middle School</h3>
-        <address>13305 San Pedro St<br>Los Angeles, CA 90061</address>
-      </div>
-      <div class="site" data-reveal>
-        <h3>Thomas Jefferson High School</h3>
-        <address>1319 E 41st St<br>Los Angeles, CA 90011</address>
-      </div>
+    <div class="measure" style="margin:0 auto" data-reveal>
+      <h2 style="text-wrap:balance">A young person's future does not begin when they graduate. <em>It begins the moment they realize they have one.</em></h2>
+      <p class="lede" style="margin-top:22px">Youth and Future Health Leaders. Helping young people build healthy lives, explore what is possible, and see themselves in the future of health.</p>
     </div>
   </div>
 </section>
-
-<!-- ===================== ON CAMPUS ===================== -->
-<section id="oncampus" style="padding-top:0">
-  <div class="wrap">
-    <div class="measure" data-reveal>
-      <p class="eyebrow">On campus</p>
-      <h2>How we work in a school.</h2>
-      <p class="lede">Schools carry a duty of care that no outside organization gets to shortcut. Ours is the easier job. We follow the school's rules, and we make it simple to say yes.</p>
-    </div>
-    <div class="opsgrid">
-      <div class="slist" data-reveal>
-        <h3>Before anyone arrives</h3>
-        <ul>
-          <li>Every HMC volunteer completes core volunteer training before any community-facing work</li>
-          <li>Staff and volunteers follow the school's own policies, including any clearance or background check the site requires</li>
-          <li>Sessions are scheduled with the site principal, around the school calendar</li>
-        </ul>
-      </div>
-      <div class="slist" data-reveal>
-        <h3>What we bring</h3>
-        <ul>
-          <li>Qualified staff, trained volunteers, and licensed professionals where a session needs one</li>
-          <li>Materials, supplies and educational resources</li>
-          <li>Registration, and follow-up after the session where it applies</li>
-        </ul>
-      </div>
-      <div class="slist" data-reveal>
-        <h3>What we publish</h3>
-        <ul>
-          <li>No student names</li>
-          <li>No photographs of students</li>
-          <li>Program descriptions, dates and locations, which is what you see on this page</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== GET INVOLVED ===================== -->
-<section id="join" style="padding-top:0">
-  <div class="wrap">
-    <div class="measure" data-reveal>
-      <p class="eyebrow">Join the work</p>
-      <h2>Somebody did this for you.</h2>
-      <p class="lede">Most people can name the adult who told them what they were capable of. Very few of them were paid to be there.</p>
-    </div>
-    <div class="involve">
-      <div class="icard" data-reveal>
-        <span class="tag">Train and mentor</span>
-        <h3>Become a volunteer</h3>
-        <p>Every HMC volunteer completes core volunteer training before working with the community. Training and hours are tracked in your volunteer record.</p>
-        <ul>
-          <li>Mentoring and enrichment sessions</li>
-          <li>Health education and family activity roles</li>
-          <li>Recurring work at the same campus, not one-off shifts</li>
-        </ul>
-        <div><a class="hmc-btn hmc-btn-primary" href="https://volunteer.healthmatters.clinic">Get started</a></div>
-      </div>
-      <div class="icard pop" data-reveal>
-        <span class="tag">Look first</span>
-        <h3>Take the tour</h3>
-        <p>Not ready to sign up? The tour walks through how volunteering works, what training covers, and what a shift asks of you, before you commit to anything.</p>
-        <div><a class="hmc-btn hmc-btn-secondary" href="https://volunteer.healthmatters.clinic/tour">Take the tour</a></div>
-      </div>
-      <div class="icard" data-reveal>
-        <span class="tag">Fund a school year</span>
-        <h3>Donate</h3>
-        <p>The school pays nothing, so somebody else does. A donation covers the materials, the supplies and the people who run the sessions.</p>
-        <div><a class="hmc-btn hmc-btn-primary" href="https://www.healthmatters.clinic/donate">Donate</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== BRING US TO YOUR SCHOOL ===================== -->
-<section id="school" style="padding-top:0">
-  <div class="wrap">
-    <div class="shipbox" data-reveal>
-      <h3>Bring us to your school</h3>
-      <p>Principals, assistant principals, afterschool coordinators and community school leads can ask for a session, a series, or a school year. Tell us four things and we will tell you what we can run.</p>
-      <ul>
-        <li>The campus and the grade levels</li>
-        <li>What you are trying to reach students with</li>
-        <li>Whether you want a single session or a recurring block</li>
-        <li>The term or the window you have in mind</li>
-      </ul>
-      <p>Email <a href="mailto:partner@healthmatters.clinic">partner@healthmatters.clinic</a> or call <a href="tel:+13239904325">(323) 990-4325</a>. Every request gets a reply.</p>
-      <div class="cta-row" style="margin-top:6px">
-        <a class="hmc-btn hmc-btn-secondary" href="mailto:partner@healthmatters.clinic?subject=Youth%20Mentorship%20and%20STEAM%20at%20our%20school">Email the team</a>
-        <a class="hmc-btn hmc-btn-secondary" href="https://partner.healthmatters.clinic">Partner portal</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <footer class="sitefoot">
@@ -677,7 +590,7 @@ footer a{color:var(--hmc-accent)}
     <div class="faq-groups">
       <div class="faq-group">
         <h5>The program</h5>
-        <details class="faq-item"><summary>What is Youth Mentorship and STEAM?</summary><div class="faq-answer">
+        <details class="faq-item"><summary>What is Youth and Future Health Leaders?</summary><div class="faq-answer">
           <p>Health Matters Clinic's school-based youth program. Afterschool enrichment, mentoring sessions, science and engineering fairs, and health and wellness programming on campus, built on the youth STEAM curriculum HMC wrote and launched in 2022.</p>
         </div></details>
         <details class="faq-item"><summary>What ages do you work with?</summary><div class="faq-answer">
@@ -688,8 +601,8 @@ footer a{color:var(--hmc-accent)}
           <p>Free to receive is not free to run. Materials, supplies and staffing are paid for by sponsors, grants and donors.</p>
         </div></details>
         <details class="faq-item"><summary>What is the Ingenium agreement?</summary><div class="faq-answer">
-          <p>Ingenium Schools has named Health Matters Clinic an approved on-site wellness partner providing recurring health and wellness programming for students and families during the 2025-2026 school year. It took effect on November 18, 2025 and runs to June 30, 2026.</p>
-          <p>Under it HMC runs a quarterly community health fair, a monthly wellness workshop series, and ongoing outreach and student service-learning at one Ingenium campus.</p>
+          <p>Ingenium Schools has named Health Matters Clinic an approved on-site wellness partner, providing recurring health and wellness programming for students and families. The work continues through the 2026 to 2027 school year.</p>
+          <p>It gives the school-based work a home: a quarterly community health fair, a monthly wellness workshop series, and ongoing outreach and student service-learning on one campus, so students see the same faces over time rather than once.</p>
         </div></details>
       </div>
 
@@ -729,9 +642,9 @@ footer a{color:var(--hmc-accent)}
       <div class="foot-cols">
         <div class="foot-col">
           <h6>Get involved</h6>
-          <a href="#join">Volunteer</a>
+          <a href="https://volunteer.healthmatters.clinic">Volunteer</a>
           <a href="https://www.healthmatters.clinic/donate">Donate</a>
-          <a href="#school">Bring us to your school</a>
+          <a href="#partner">Bring us to your school</a>
           <a href="https://partner.healthmatters.clinic">Partner portal</a>
         </div>
         <div class="foot-col">
